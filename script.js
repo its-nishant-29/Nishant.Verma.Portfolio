@@ -21,8 +21,21 @@ $(document).ready(function () {
             
             $("html").css("scrollBehavior", "smooth");
           });
-          
+
           $(".menu-btn").click(function () {
             $(".navbar .menu").toggleClass("active");
             $(".menu-btn i").toggleClass("active");
+          });
+
+          var typed = new Typed(".typing", {
+            strings: [
+              "Fullstack Developer",
+              "Software Developer",
+              "Python Developer",
+              "Founder",
+              "Author"
+            ],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
           });
