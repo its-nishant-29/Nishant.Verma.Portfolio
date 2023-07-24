@@ -356,4 +356,32 @@
     font-weight: 600;
     margin-bottom: 10px;
   }
+  .about .about-content .right .text span {
+    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .about .about-content .right p {
+    text-align: justify;
+  }
+  
+  .about .about-content .right a {
+    display: inline-block;
+    background: #1e3551;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #1e3551;
+    transition: all 0.3s ease;
+  }
+  
+  .about .about-content .right a:hover {
+    color: #1e3551;
+    background: none;
+    animation: pulsate 1s ease-in-out;
+  }
   
