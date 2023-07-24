@@ -820,4 +820,20 @@
     color: #fff;
   }
   
+  footer {
+    background: #111;
+    padding: 6px 16px;
+    color: #888c8d;
+    text-align: center;
+  }
+  
+  footer span a {
+    color: #1e3551;
+    text-decoration: none;
+  }
+  
+  footer span a:hover {
+    text-decoration: underline;
+  }
+  
   
