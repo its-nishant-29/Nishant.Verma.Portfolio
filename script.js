@@ -11,3 +11,14 @@ $(document).ready(function () {
             $(".scroll-up-btn").removeClass("show");
           }
         });
+        $(".scroll-up-btn").click(function () {
+            $("html").animate({ scrollTop: 0 });
+            //  removing smooth scroll on slide-up button click  //
+            $("html").css("scrollBehavior", "auto");
+          });
+        
+          $(".navbar .menu li a").click(function () {
+            //  Smooth scroll on Menu Items click  //
+        
+            $("html").css("scrollBehavior", "smooth");
+          });
