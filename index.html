@@ -7,6 +7,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="/script.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3b57a2a2a7.js"></script>
 </head>
 <body>
     
@@ -20,7 +23,7 @@
           <ul class="menu">
             <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
             <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
-            <li><a href="#services" class="menu-btn"><strong>Services</strong></a></li>
+            <!-- <li><a href="#services" class="menu-btn"><strong>Services</strong></a></li> -->
             <li><a href="#skills" class="menu-btn"><strong>Skills</strong></a></li>
             <li><a href="#projects" class="menu-btn"><strong>Projects</strong></a></li>
             <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
@@ -36,7 +39,7 @@
           <div class="home-content">
             <div class="text-1">Hello, This is</div>
             <div class="text-2">Nishant Verma</div>
-            <div class="text-3">And I'm a <span class="typing"></span></div>
+            <div class="text-3">And I'm a Front-End Developer<span class="typing"></span></div>
             <a href="#">Hire me</a>
           </div>
         </div>
@@ -66,13 +69,12 @@
         </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- <section class="services" id="services">
         <div class="max-width">
           <h2 class="title">My services</h2>
           <div class="serv-content">
             <div class="card">
               <div class="box">
-                <i class="fas fa-laptop-code"></i>
                 <div class="text">Web Design</div>
                 <p>Your Next Web Developer, who is working in Shopify Dropshipping Stores, High Converting Ecommerce stores, Product Page also having Custom code, liquid template design.</p>
               </div>
@@ -93,7 +95,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="skills" id="skills">
         <div class="max-width">
@@ -316,3 +318,19 @@
 
 </body>
 </html>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(window).scroll(function () {
+        if (this.scrollY > 20) {
+            $(".navbar").addClass("sticky");
+          } else {
+            $(".navbar").removeClass("sticky");
+          }
+          if (this.scrollY > 500) {
+            $(".scroll-up-btn").addClass("show");
+          } else {
+            $(".scroll-up-btn").removeClass("show");
+          }
+        });
+      })
+</script>
