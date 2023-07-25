@@ -301,7 +301,7 @@
   }
   .home .home-content .text-3 span {
     color: #1e3551;
-    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    background: greenyellow;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
@@ -357,7 +357,7 @@
     margin-bottom: 10px;
   }
   .about .about-content .right .text span {
-    background: linear-gradient(135deg, #041d3d, #fff, crimson);
+    background: orange;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
