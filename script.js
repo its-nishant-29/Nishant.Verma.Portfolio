@@ -27,7 +27,6 @@ $(document).ready(function () {
             strings: [
               "Fullstack Developer",
               "Software Developer",
-              "Python Developer",
               "Founder",
               "Author"
             ],
@@ -39,7 +38,6 @@ $(document).ready(function () {
             strings: [
               "Fullstack Developer",
               "Software Developer",
-              "Python Developer",
               "Founder",
               "Author"
             ],
@@ -69,4 +67,6 @@ $(document).ready(function () {
             }
           });
         });
+
+       
         
