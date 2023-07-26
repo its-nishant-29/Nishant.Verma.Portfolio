@@ -99,7 +99,7 @@ body {    font-family: 'Poppins', sans-serif;
     width: 75px;
     height: 75px;
     color: var(--second-color);
-    background-color: #1e3551;
+    background-color: skyblue;
     position: absolute;
     top: calc(-75px / 2);
     transform: rotate(45deg);
