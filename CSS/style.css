@@ -55,7 +55,7 @@
   }
   
   .about,
-  .services,
+  .education,
   .skills,
   .projects,
   .contact,
@@ -64,7 +64,7 @@
   }
   
   .about .about-content,
-  .services .serv-content,
+  .education .serv-content,
   .skills .skills-content,
   .contact .contact-content {
     display: flex;
@@ -98,7 +98,7 @@
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #1e3551;
+    color: #a6a3a3;
     padding: 0 5px;
     transform: translateX(-50%);
   }
@@ -128,12 +128,7 @@
     font-size: 35px;
     font-weight: 600;
   }
-  .navbar .logo a span {
-  background:  linear-gradient(135deg, #041d3d, #fff, crimson);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease;
-}
+  
 
 .navbar.sticky .logo a span {
   color: #fff;
@@ -198,7 +193,7 @@
   filter: brightness(90%);
 }
 .navbar .logo a span {
-    background: white;
+    background: rgb(239, 240, 240);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease;
@@ -322,7 +317,7 @@
   
   .home .home-content a:hover {
     color: #1e3551;
-    background: none;
+    background: rgb(183, 221, 244);
     animation: pulsate 1s ease-in-out;
   }
   .about {
@@ -384,24 +379,19 @@
     background: none;
     animation: pulsate 1s ease-in-out;
   }
-  .services,
+  .education,
 .projects {
   color: #fff;
   background: #111;
 }
-
-.services .title::before,
-.projects .title::before {
-  background: #fff;
-}
-
-.services .title::after,
+.education .title::after,
 .projects .title::after {
   background: #111;
-  content: "What I Provide ?";
+  content: "'My academic details'";
+
 }
 
-.services .serv-content .card {
+.education .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
   text-align: center;
@@ -411,32 +401,32 @@
   transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover {
+.education .serv-content .card:hover {
   background: #1e3551;
 }
 
-.services .serv-content .card .box {
+.education .serv-content .card .box {
   transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover .box {
+.education .serv-content .card:hover .box {
   transform: scale(1.05);
 }
 
-.services .serv-content .card i {
+.education .serv-content .card i {
   font-size: 50px;
   color: #888e8d;
-  background: linear-gradient(135deg, #041d3d, #fff, crimson);
+  background: skyblue;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: color 0.3s ease;
 }
 
-.services .serv-content .card:hover i {
+.education.serv-content .card:hover i {
   color: #fff;
 }
 
-.services .serv-content .card .text {
+.education.serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
@@ -444,9 +434,7 @@
 .skills {
     background: radial-gradient(#e1efff, white);
   }
-  .skills .title::after {
-    content: "—What I Know ?—";
-  }
+
   
   .skills .skills-content .column {
     width: calc(50% - 30px);
@@ -479,17 +467,6 @@
     color: #1e3551;
     background: none;
     animation: pulsate 1s ease-in-out;
-  }
-  
-  .intern,
-  .project {
-    list-style: none;
-  }
-  
-  .intern::before,
-  .project::before {
-    content: "✪ ";
-    color: #1e3551;
   }
   
   .skills .skills-content .right .bars {
@@ -747,7 +724,7 @@
   
   .social-menu ul {
     position: absolute;
-    left: 20%;
+    left: 26%;
     padding: 0;
     margin: 0;
     transform: translate(-50%, -50%);
@@ -773,7 +750,7 @@
   .social-menu ul li a {
     left: px;
     right: 12px;
-    padding-top: 3px;
+    padding-top: 6px;
     position: relative;
     display: block;
     width: 30px;
@@ -808,17 +785,17 @@
     background-color: #e33054;
   }
   
-  .social-menu ul li:nth-child(6) a:hover {
+  /* .social-menu ul li:nth-child(6) a:hover {
     background-color: #fc4f08;
-  }
+  } */
   
   .fa-brands {
     color: #fff;
   }
   
-  .fa-solid {
-    color: #fff;
-  }
+  /* .fa-solid {
+    color: #4d1212;
+  } */
   
   footer {
     background: #111;
@@ -828,7 +805,7 @@
   }
   
   footer span a {
-    color: #1e3551;
+    color: #888c8d;
     text-decoration: none;
   }
   
@@ -913,7 +890,7 @@
     .about .about-content .right {
       flex: 100%;
     }
-    .services .serv-content .card {
+    .education .serv-content .card {
       width: calc(50% - 10px);
       margin-bottom: 20px;
     }
@@ -937,7 +914,7 @@
     .home .home-content a {
       font-size: 20px;
     }
-    .services .serv-content .card {
+    .education .serv-content .card {
       width: 100%;
     }
   }
