@@ -27,6 +27,8 @@ $(document).ready(function () {
             strings: [
               "Fullstack Developer",
               "Software Developer",
+              "Mechanical Engineer",
+              "Artist"
             ],
             typeSpeed: 100,
             backSpeed: 60,
@@ -36,6 +38,8 @@ $(document).ready(function () {
             strings: [
               "Fullstack Developer",
               "Software Developer",
+              "Mechanical Engineer",
+              "Artist"
             ],
             typeSpeed: 100,
             backSpeed: 60,
