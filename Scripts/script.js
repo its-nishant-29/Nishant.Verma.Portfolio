@@ -25,7 +25,7 @@ $(document).ready(function () {
           });
           var typed = new Typed(".typing", {
             strings: [
-              "Fullstack Developer",
+              "Front-End Developer",
               "Software Developer",
               "Mechanical Engineer",
               "Artist"
@@ -36,7 +36,7 @@ $(document).ready(function () {
           });
           var typed = new Typed(".typing-2", {
             strings: [
-              "Fullstack Developer",
+              "Front-End Developer",
               "Software Developer",
               "Mechanical Engineer",
               "Artist"
