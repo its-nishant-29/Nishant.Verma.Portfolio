@@ -78,8 +78,8 @@
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
     font-family: "Ubuntu", sans-serif;
   }
   
@@ -323,13 +323,13 @@
   .about {
     background: radial-gradient(#e1efff, white);
   }
-  .about .title::after {
+  /* .about .title::after {
     content: "—Who I Am ?—";
     text-overflow: ellipsis;
     display: -webkit-inline-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-  }
+  } */
   
   .about .about-content .left {
     width: 45%;
@@ -385,18 +385,18 @@
   background: #111;
 }
 .education .title::after,
-.projects .title::after {
+/* .projects .title::after {
   background: #111;
   content: "'My academic details'";
 
-}
+} */
 
 .education .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
   text-align: center;
-  border-radius: 10px;
-  padding: 50px 25px;
+  border-radius: 105px;
+  padding: 100px 30px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -525,9 +525,9 @@
     width: 70%;
   }
   
-  .projects .title::after {
+  /* .projects .title::after {
     content: "What I did ?";
-  }
+  } */
   
   .projects .carousel .card {
     background: #222;
@@ -602,9 +602,9 @@
     background: radial-gradient(#e1efff, white);
   }
   
-  .contact .title::after {
+  /* .contact .title::after {
     content: "—Get in Touch—";
-  }
+  } */
   
   .contact .contact-content .column {
     width: calc(50% - 30px);
