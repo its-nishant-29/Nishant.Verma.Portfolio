@@ -1,5 +1,6 @@
 
-newsdiv = '';
+newdiv = '';
+
 country = 'IN';
 category = 'Sports';
 language = 'en';
@@ -24,7 +25,7 @@ try {
 
 			highlights = news.title.split(' ');
 			highlights = highlights.slice(0, 3).join(' ');
-			newsdiv +=`
+			newdiv +=`
 		<li class="cards_item">
       	<div class="card">
         <div class="card_image" style="color:darkgray;"><h1> ${highlights}</h1></div>
@@ -37,7 +38,10 @@ try {
     	</li>`
 		}
 
-		$("#NewsDiv").html(newsdiv);
+		
+		
+
+		$("#NewsDiv").html(newdiv);
 			
 	})
 	.catch(err => console.error(err));
