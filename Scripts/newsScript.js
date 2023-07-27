@@ -1,9 +1,12 @@
 
-
-mydiv = '';
-function getNewsByCountry(country){
-	const ln='en';
-    const url = 'https://news-api14.p.rapidapi.com/top-headlines?country='+country+'&language='+ln+'&pageSize=10&category=sports';
+newsdiv = '';
+country = 'IN';
+category = 'Sports';
+language = 'en';
+function getNewsByCountry(country, language, category){
+	//const ln='en';
+	console.log('Input: '+ country + ' ' + language +' ' + category)
+		const url = 'https://news-api14.p.rapidapi.com/top-headlines?country='+country+'&language='+language.toLowerCase()+'&pageSize=10&category=' + category;
     const options = {
 	method: 'GET',
 	headers: {
@@ -18,25 +21,23 @@ try {
 	.then(data => {
 		console.log(data)	
 		for (const news of data.articles){
-			mydiv += ` 
-				<div class="col-lg-4 col-md-4 col-xs-12">
-				  <div class="card mb-4 rounded-3 shadow-sm border-primary" style="max-height:273px"> 
-					<div class="card-header py-3 text-bg-primary border-primary">
-					<p class="my-0 fw-normal">${news.title.split(':')[0]}</p>
-					</div>
-						<p class="my-0 fw-normal">${news.title}</p>
-						<div class="card-body">
-						  <a href="${news.url}" class="btn btn-primary">Read More</a>
-					  	  </h8>
-					 	 <ul class="list-unstyled mt-3 mb-4">
-							<li >Published on ${news.published_date.split('T')[0]}</li>
-					  	 </ul>
-				  		 </div> 
-		  		</div>
-				</div>
-			`
+
+			highlights = news.title.split(' ');
+			highlights = highlights.slice(0, 3).join(' ');
+			newsdiv +=`
+		<li class="cards_item">
+      	<div class="card">
+        <div class="card_image" style="color:darkgray;"><h1> ${highlights}</h1></div>
+        <div class="card_content">
+          			<p class="card_text">${news.title}</p>
+					<h8 class="card_title">Published Date: ${news.published_date.split('T')[0]}</h8>
+          			<a class="btn card_btn" href="${news.url}" >Read More</a>
+     			   </div>
+    		  </div>
+    	</li>`
 		}
-		$("#NewsDiv").html(mydiv);
+
+		$("#NewsDiv").html(newsdiv);
 			
 	})
 	.catch(err => console.error(err));
@@ -45,4 +46,19 @@ try {
 	console.error(error);
 }
 }
+function handleNewsInput(e){
+	e.preventDefault(); // Prevent the default form submission behavior
 
+    // Fetch the value of the city input field
+    const countryInput = document.getElementById('country');
+    const languageInput = document.getElementById('language');
+    const categoryInput = document.getElementById('category');
+	if(countryInput.value != '')
+    country = countryInput.value;
+	if(languageInput.value !='')
+    language = languageInput.value;
+	if(categoryInput.value !='')
+    category = categoryInput.value;
+	console.log('Input: '+ country + ' ' + language +' ' + category)
+	getNewsByCountry(country, language, category);
+}
