@@ -323,13 +323,7 @@
   .about {
     background: radial-gradient(#e1efff, white);
   }
-  /* .about .title::after {
-    content: "—Who I Am ?—";
-    text-overflow: ellipsis;
-    display: -webkit-inline-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  } */
+ 
   
   .about .about-content .left {
     width: 45%;
@@ -385,11 +379,6 @@
   background: #111;
 }
 .education .title::after,
-/* .projects .title::after {
-  background: #111;
-  content: "'My academic details'";
-
-} */
 
 .education .serv-content .card {
   width: calc(33% - 20px);
@@ -602,9 +591,7 @@
     background: radial-gradient(#e1efff, white);
   }
   
-  /* .contact .title::after {
-    content: "—Get in Touch—";
-  } */
+ 
   
   .contact .contact-content .column {
     width: calc(50% - 30px);
@@ -785,17 +772,12 @@
     background-color: #e33054;
   }
   
-  /* .social-menu ul li:nth-child(6) a:hover {
-    background-color: #fc4f08;
-  } */
+ 
   
   .fa-brands {
     color: #fff;
   }
-  
-  /* .fa-solid {
-    color: #4d1212;
-  } */
+ 
   
   footer {
     background: #111;
